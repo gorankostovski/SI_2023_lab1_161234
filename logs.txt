@@ -1,0 +1,12 @@
+commit 336f7b348ab102dfb10f20f2ac83848e3de87ba6 (HEAD -> master, origin/master)
+Author: Goran Kostovski <gorankostovski@yahoo.com>
+Date:   Sun Apr 9 16:55:09 2023 +0200
+
+    Add java class
+
+commit 76c2b6f1522b179e520c8a3817ddff31185384e2
+Author: Goran Kostovski <gorankostovski@yahoo.com>
+Date:   Sun Apr 9 16:48:22 2023 +0200
+
+    Initial commit
+

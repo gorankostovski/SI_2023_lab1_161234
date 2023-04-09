@@ -1,0 +1,60 @@
+Лабораториска вежба бр. 1 по Софтверско инженерство
+Изработена од Горан Костовски со бр. на индекс 161234
+Линк до мојот Git репозиториум: https://github.com/gorankostovski/SI_2023_lab1_161234
+
+Го симнав и инсталирав git од git-scm.com/download/win. Потоа, влегов во мојот веќе постоечки профил
+на github.com и го променив името на мојата главна гранка во master преку github.com/settings/repositories.
+Потоа направив оддалечен репозиториум на Github со име SI_2023_lab1_161234 и го направив да биде
+приватен.
+
+Пред да почнам со користење на git, го наместив default идентитетот на accountot на новата Git инсталација
+со помош на командата git config --global user.name "Goran Kostovski" и командата 
+git config --global user.email gorankostovski@yahoo.com, и ја проверив промената со командата
+git config --list.
+
+Потоа, со помош на следните команди,
+влегов во мојот директориум со проекти:
+cd C:\\Users\\zzz\\Projects
+направив нов директориум со исто име како репозиториумот на github.com:
+mkdir SI_2023_lab1_161234
+влегов во тој директориум:
+cd SI_2023_lab1_161234
+го претворив овој директориум во локален репозиториум (го иницијализирав Git):
+git init
+ги поврзав локалниот репозиториум и оддалечениот репозиториум со помош на командата:
+git remote add origin https://github.com/gorankostovski/SI_2023_lab1_161234.git
+направив нов фајл README.md:
+touch README.md
+го отворив фајлот и се потпишав:
+notepad README.md
+сега фајлот е во untracked фаза, па го ставив во staged area со помош на
+командата:
+git add README.md
+и направив commit со порака Initial commit:
+git commit -m "Initial commit"
+
+Потоа направив нов фајл SILab1.java и ја запишав внатре бараната содржина:
+touch SILab1.java
+notepad SILab1.java
+го ставив во staging area:
+git add SILab1.java
+направив commit со порака Add java class:
+git commit -m "Add java class"
+и ги синхронизирав сите гранки со оддалечениот репозиториум:
+git push -u origin master
+
+Потоа направив нова датотека logs.txt:
+touch logs.txt
+за да ги видам досегашните git логови ја извршив командата:
+git log
+и потоа ги ископирав и ги внесов во фајлот logs.txt:
+notepad logs.txt
+Потоа направив нова датотека со име 161234 во која ја ископирав целата оваа документација:
+touch 161234.txt
+notepad 161234.txt
+ги ставив двата директориуми logs.txt и 161234.txt во staging area:
+git add logs.txt 161234.txt
+направив последен commit со порака Final commit:
+git commit -m "Final commit"
+и ги синхронизирав сите гранки со оддалечениот репозиториум:
+git push -u origin master
